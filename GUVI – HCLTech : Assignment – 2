@@ -1,0 +1,25 @@
+GUVI – HCLTech : Assignment – 2
+
+1.	E-commerce Cart System
+Ans: Use LinkedHashMap<Item, Integer> because it allows you to store item quantities (for duplicates) and preserves the insertion order.
+
+2.	Auto-Complete Feature
+Ans: Use a TreeSet<String> because it stores unique words in sorted (alphabetical) order and supports efficient prefix-based searches using methods like subSet().
+
+3. LRU Cache
+Ans: Use LinkedHashMap with accessOrder = true to maintain LRU order and override removeEldestEntry() to remove the least recently used item.
+
+4. Leaderboard System
+Ans: Use a TreeSet<Player> with a custom comparator to sort players by score in descending order and ensure uniqueness.
+
+5. Real-Time Notification System
+Ans: Use a LinkedList or ConcurrentLinkedQueue to maintain FIFO order for real-time event processing.
+
+ 6. Eliminating Duplicate Emails
+Ans: Use a LinkedHashSet<String> to eliminate duplicates while preserving the order of first appearance.
+
+7. Directory Structure Simulation
+Ans: Use a tree structure with Map<String, DirectoryNode> in each node to represent subfolders and files hierarchically.
+
+ 8. Priority-based Task Scheduling
+Ans: Use a PriorityQueue<Task> with a custom comparator to retrieve tasks based on their priority.
