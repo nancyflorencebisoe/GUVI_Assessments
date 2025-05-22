@@ -1,0 +1,18 @@
+GUVI Week-1 Assessment
+
+1. Scenario: Constructor Confusion
+Ans: C. There is no default constructor defined
+
+2. Scenario: Method Overloading or Overriding?
+Ans: C. Compilation error
+
+3. Scenario: Tricky Reference Behavior
+Ans: B. 20 — obj2 and obj1 refer to the same object
+
+
+4. Scenario: Object Nullification
+Ans: C. NullPointerException
+
+5. Scenario: Inheritance + Method Overriding + Constructor Order
+Ans: Output will be NullPointerException
+Reason: The Dog class sound filed is not initialized when speak() is called from the Animal constructor.
