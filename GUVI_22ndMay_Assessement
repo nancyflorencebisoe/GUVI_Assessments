@@ -1,0 +1,80 @@
+Test Scenarios For Sprint 1 – User Story 1
+
+UAC 1: “I can input an amount for conversion”
+1.	TS1.1: Verify that the user can input numeric values in the amount field
+2.	TS1.2: Verify that the input field accepts decimal values (e.g., 100.25)
+3.	TS1.3: Verify that the field does not accept invalid character (e.g., letters, special symbols)
+4.	TS1.4: Verify the behavior when the input amount is zero.
+5.	TS1.5: Verify the behavior when the input amount is empty and conversion is attempted
+6.	TS1.6: Verify the system handles very large values correctly without crashing or lagging
+
+UAC 2: “I can select from and to currencies”
+1.	TS2.1: Verify that the “From Currency” dropdown is present and populated with available currencies.
+2.	TS2.2: Verify that the “To Currency” dropdown is present and populated with available currencies.
+3.	TS2.3: Verify that the user can select both “From” and “To” currencies from the dropdowns
+4.	TS2.4: Verify that the selected currencies are displayed correctly after selection
+5.	TS2.5: Verify conversion logic works correctly for a selected “From” and “To” currency pair
+6.	TS2.6: Verify behavior when the same currency is selected in both “From” and “To” fields.
+
+UAC 3: “I have a provision to flip the from and to currencies after selection”
+1.	TS3.1: Verify that a flip/swap buttons exists between the “From” and “To” currency selectors
+2.	TS3.2: Verify that clicking the flip button correctly swaps the selected currencies
+3.	TS3.3: Verify that the input amount remains unchanged after the swap
+4.	TS3.4: Verify that the converted amount updates correctly based on the new currency direction
+5.	TS3.5: Verify that flip functionality works for all available currency combinations
+6.	TS3.6: Verify the behavior of flip functionality when either dropdown is not selected.
+
+
+Test Scenarios For Sprint 1 – User Story 2
+UAC 1: “I can view the from and to currency codes”
+1.	TS1.1: Verify that the currency code (e.g., USD, EUR) is displayed for the selected “From” currency
+2.	TS1.2: Verify that the currency code is displayed for the selected “To” currency
+3.	TS1.3: Verify that the currency codes update correctly when different currencies are selected
+4.	TS1.4: Verify that the currency codes are displayed consistently across the app interface (e.g., dropdowns, results)
+
+UAC 2: “I can view the from and to currency names”
+1.	TS2.1: Verify that the full name of the “From” currency (e.g., US Dollar) is displayed alongside the code
+2.	TS2.2: Verify that the full name of the “To” currency is displayed correctly
+3.	TS2.3: Verify that the currency names update correctly upon selection change
+4.	TS2.4: Verify that currency name and code are not mismatched
+
+UAC 3: “I can view the currency conversion computation for both the currencies”
+1.	TS3.1: Verify that the conversion result is shown clearly, e.g., 1 USD = 0.92 EUR
+2.	TS3.2: Verify that the computation updates automatically when the amount or currencies are changed
+3.	TS3.3: Verify that a reverse computation is also shown if supported (e.g., 1 EUR = 1.08 USD)
+4.	TS3.4: Verify rounding and formatting (e.g., up to 2 or 4 decimal places depending on the currency)
+5.	TS3.5: Verify that the conversion result is accurate using a reliable external exchange rate source
+
+UAC 4: “I can view current date/time of conversion”
+1.	TS4.1: Verify that the current date and time of the conversion are displayed near the result.
+2.	TS4.2: Verify that the time is shown in the correct format (e.g., DD-MM-YYYY HH.mm.ss)
+3.	TS4.3: Verify that the displayed time updates correctly on each conversion attempt
+4.	TS4.4: Verify that the time shown matches the actual time on the device/server within an acceptable range
+
+UAC 5: “I have a provision to look at a chart that shows the rate history for the given day”
+1.	TS5.1: Verify that a chart component is available for the selected currency pair
+2.	TS5.2: Verify that the chart updates correctly based on the selected currency pair
+3.	TS5.3: Verify that the chart displays historical rate date for the currency day (e.g., by hour or minute)
+4.	TS5.4: Verify that the chart handles cases with missing or unavailable data gracefully (e.g., shows “No Data Available”)
+5.	TS5.5: Verify that hovering or tapping on the chart shows tooltips or data points (if supported)
+6.	TS5.6: Verify that the chart reloads data when the user selects a different pair or refreshes the screen
+
+Test Scenarios For Sprint 2 – User Story 3
+UAC 1: “I can see the from and to currency codes”
+1.	TS1.1: Verify that the selected “From” currency code (e.g., USD) is visible before conversion
+2.	TS1.2: Verify that the selected “To” currency code (e.g., INR) is visible before conversion
+3.	TS1.3: Verify that currency codes remain visible and accurate after conversion
+4.	TS1.4: Verify that currency codes are updated correctly when a new currency pair is selected for re-conversion
+
+UAC 2: “I can use a default amount and perform a conversion”
+1.	TS2.1: Verify that a predefined default amount (e.g., 1 or 100) is displayed when the screen loads
+2.	TS2.2: Verify that the conversion works correctly using the default amount without user input
+3.	TS2.3: Verify that the conversion result using the default amount is accurate and based on current rates
+4.	TS2.4: Verify that the default amount can trigger conversion immediately (e.g., on the page load or button click)
+
+UAC 3: “I can change the default amount before conversion”
+1.	TS3.1: Verify that the default amount field is editable
+2.	TS3.2: Verify that the user can input a custom amount and perform a conversion
+3.	TS3.3: Verify that the conversion result updates accurately when the default amount is changed
+4.	TS3.4: Verify that changing the amount doesn’t reset the selected currencies
+5.	TS3.5: Verify validation for invalid inputs (e.g., letters, negative numbers) in the amount field
